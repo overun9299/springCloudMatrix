@@ -3,6 +3,7 @@ package overun.service;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import overun.schedual.SchedualServiceHiHystric;
 
 /**
  * @ClassName: FeignService
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @Copyright: 2019 www.yimidida.com Inc. All rights reserved.
  */
 
-@FeignClient(value = "eureka-client")
+@FeignClient(value = "eureka-client" , fallback = SchedualServiceHiHystric.class)
 public interface FeignService {
 
     @RequestMapping(value = "/port",method = RequestMethod.GET)
