@@ -12,7 +12,7 @@ public interface RibbonService {
 
 
     /**
-     * 分在均衡消费服务
+     * 负载均衡消费服务
      * @return
      */
     String balanceRibbon();
