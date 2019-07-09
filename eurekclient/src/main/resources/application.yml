@@ -1,0 +1,14 @@
+# 本项目的端口
+server:
+  port: 9702
+
+# 本项目在注册中心的名称
+spring:
+  application:
+    name: eureka-client
+
+# 注册中心的url
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9700/eureka/
