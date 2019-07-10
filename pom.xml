@@ -10,6 +10,7 @@
     <modules>
         <module>service-ribbon</module>
         <module>sericeFeign</module>
+        <module>serviceZuul</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -10,6 +10,7 @@
         <module name="eurekclient" />
         <module name="sericeFeign" />
         <module name="serviceribbon" />
+        <module name="serviceZuul" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="eurekaserver" options="-parameters" />
       <module name="eurekclient" options="-parameters" />
       <module name="sericeFeign" options="-parameters" />
+      <module name="serviceZuul" options="-parameters" />
       <module name="serviceribbon" options="-parameters" />
     </option>
   </component>
