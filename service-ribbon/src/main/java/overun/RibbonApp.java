@@ -26,10 +26,10 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @SpringBootApplication
 @EnableHystrix
-public class app {
+public class RibbonApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(app.class , args);
+        SpringApplication.run(RibbonApp.class , args);
     }
 
 
